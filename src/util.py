@@ -13,11 +13,11 @@ def get_repository_root() -> Path:
     data_dir = repo_root / 'data'
     output_dir = repo_root / 'outputs'
 
-    # write to the file test_output.txt in the outputs directory of the repo
+   
     with open(output_dir / 'test_output.txt', 'w') as f:
         f.write('test success!')
 
-    # You can still use the returned path object with os.path
+   
     hello_out_file = os.path.join(get_repository_root(), 'hello.txt')
     """
     return Path(__file__).absolute().parent.parent
